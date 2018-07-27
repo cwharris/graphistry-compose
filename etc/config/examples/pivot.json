@@ -1,0 +1,48 @@
+{
+    "log": {
+        "level": "DEBUG"
+    },
+
+
+//    "elasticsearch":{
+//      "host": "es.somewhere.com",
+//      "port": 9200,
+//      "protocol": "https://",
+//      "auth": "{{ es_auth }}",
+
+    },
+
+
+//    "splunk":
+//      {"key": "words-only-you-know",
+//      "user": "yourname",
+//      "host": "splunk.somewhere.com",
+//      "port": 8089,
+//      "uiPort": 443,
+//      "scheme": "https"
+//    },
+
+    "layouts": {
+      "network": {
+        "ipInternalAcceptList": {{ ip_internal_accept_list }}
+      }
+    },
+
+    "authentication": {
+      "passwordHash":   "{{ http_password_hash }}",
+      "username": "{{ http_user|default('admin') }}"
+    },
+
+
+    "pivots": {
+      "show": [
+//        "search-es-plain",
+//        "expand-elasticsearch-plain",
+//        "expand-splunk-plain",
+//        "search-splunk-plain",
+        "http-search",
+        "http-expand",
+        "manual-data"
+      ]
+    }
+}

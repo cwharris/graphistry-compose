@@ -1,0 +1,30 @@
+version: "3"
+services:
+
+  nginx:
+    image: spengler.grph.xyz/release/nginx-proxy:2000
+    ports:
+      - 80:80
+      - 443:443
+    links:
+      - pivot
+      - central
+
+  central:
+    image: spengler.grph.xyz/release/graphistry-central:2000
+    links:
+      - mongo
+
+  viz:
+    image: spengler.grph.xyz/release/graphistry-viz:2000
+    links:
+      - mongo
+
+  pivot:
+    image: spengler.grph.xyz/release/graphistry-pivot:2000
+
+  mongo:
+    image: graphistry/mongo:3.2.20
+
+
+

@@ -1,0 +1,14 @@
+{
+
+// AWS S3 credentials are Required if you'd like to store files on s3
+//    "S3_ACCESS": "{{ s3_access }}",
+//  "S3_SECRET": "{{ s3_secret }}",
+
+
+  "API":{
+    "CANARY": "changeme",
+    "SECRET": "a10fddb25e0d9c9dd5f149c13071",
+        "ALGORITHM": "aes-256-cbc"
+    }
+
+}
