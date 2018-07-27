@@ -12,3 +12,5 @@ docker save -o containers.tar \
 mkdir dist
 touch dist/graphistry.tar.gz
 tar -czf dist/graphistry.tar.gz docker-compose.yml scripts etc containers.tar
+
+
