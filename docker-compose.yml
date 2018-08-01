@@ -22,6 +22,8 @@ services:
 
   pivot:
     image: spengler.grph.xyz/release/graphistry-pivot:2000
+    env_file:
+      - ./etc/config/deployment/pivot/.env.pivot
 
   mongo:
     image: graphistry/mongo:3.2.20

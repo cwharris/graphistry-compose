@@ -24,13 +24,13 @@
 
     "layouts": {
       "network": {
-        "ipInternalAcceptList": {{ ip_internal_accept_list }}
+        "ipInternalAcceptList": ['a', 'list', 'of', 'ips']
       }
     },
 
     "authentication": {
-      "passwordHash":   "{{ http_password_hash }}",
-      "username": "{{ http_user|default('admin') }}"
+      "passwordHash":   "<see instructions for password hash>",
+      "username": "<pick a fun name you like>"
     },
 
 
