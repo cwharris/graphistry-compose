@@ -3,6 +3,7 @@ services:
 
   nginx:
     image: spengler.grph.xyz/release/nginx-proxy:2000
+    container_name: graphistry
     ports:
       - 80:80
       - 443:443
@@ -12,19 +13,24 @@ services:
 
   central:
     image: spengler.grph.xyz/release/graphistry-central:2000
+    depends_on:
+      - mongo
     links:
       - mongo
+    env_file:
+      - .env
 
   viz:
     image: spengler.grph.xyz/release/graphistry-viz:2000
     links:
       - mongo
+    env_file:
+      - .env
 
   pivot:
     image: spengler.grph.xyz/release/graphistry-pivot:2000
+    env_file:
+      - .env
 
   mongo:
     image: graphistry/mongo:3.2.20
-
-
-
