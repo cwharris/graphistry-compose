@@ -3,7 +3,6 @@ services:
 
   nginx:
     image: spengler.grph.xyz/release/nginx-proxy:2000
-    container_name: graphistry
     ports:
       - 80:80
       - 443:443
