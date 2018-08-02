@@ -9,3 +9,4 @@ etc/config/deployment/pivot/.env.*
 etc/config/deployment/viz/.env.*
 etc/config/deployment/pivot/*.conf
 etc/config/deployment/viz/*.conf
+etc/ssl
