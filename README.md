@@ -1,6 +1,17 @@
 Graphistry Docker Compose Bootstrap
 ===================================
 
+Running Graphistry
+------------------
+
+`docker-compose up`
+
+or 
+
+`docker-compose up -d`
+
+to run as daemon.
+
 Environment Setup
 -----------------
 The contents of the `.env` file should guide you through your complete setup
