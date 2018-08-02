@@ -122,3 +122,12 @@ right up for you.
 ```
 
 There is an alternate SSL conf you can use if yo uare not using a self signed cert. `./etc/nginx/ssl.conf`.
+
+Bootstrap System
+================
+
+Bootstrap either rhel with
+
+`$ ./bootstrap rhel/ubuntu`
+
+Take a look at the individual bootstrap scripts in `./bootstrap`

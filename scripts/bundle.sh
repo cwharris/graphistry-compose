@@ -11,6 +11,6 @@ docker save -o containers.tar \
 
 rm -rf dist && mkdir -p dist
 touch dist/graphistry.tar.gz
-tar -czf dist/graphistry.tar.gz docker-compose.yml scripts etc containers.tar .env README.md
+tar -czf dist/graphistry.tar.gz docker-compose.yml scripts etc containers.tar .env README.md bootstrap
 
 
