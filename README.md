@@ -115,8 +115,8 @@ right up for you.
       - central
     # volumes:  
     #   - ./etc/nginx/nginx.conf:/etc/nginx/nginx.conf
-    #   - ./etc/nginx/conf.d/graphistry.conf:/etc/nginx/conf.d/graphistry.conf
-    #   - ./etc/nginx/conf.d/ssl.self-provided.conf:/etc/nginx/graphistry/ssl.conf
+    #   - ./etc/nginx/graphistry.conf:/etc/nginx/conf.d/graphistry.conf
+    #   - ./etc/nginx/ssl.self-provided.conf:/etc/nginx/graphistry/ssl.conf
     #   - ./etc/ssl:/etc/ssl
 
 ```
