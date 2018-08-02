@@ -18,6 +18,9 @@ sudo pkill -SIGHUP dockerd
 
 docker run --runtime=nvidia --rm nvidia/cuda nvidia-smi
 
-sudo cp ../daemon.json /etc/docker/daemon.json
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+sudo cp ${DIR}/../daemon.json /etc/docker/daemon.json
 
 sudo service docker restart
+
+sudo pip install docker-compose

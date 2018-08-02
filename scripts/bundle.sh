@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo -e "Bundling Graphistry for Distrobution"
+echo -e "Bundling Graphistry for Distribution"
 
 docker save -o containers.tar \
     spengler.grph.xyz/release/nginx-proxy:2000 \
