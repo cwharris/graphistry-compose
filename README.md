@@ -113,7 +113,7 @@ right up for you.
     links:
       - pivot
       - central
-        # volumes:  
+    # volumes:  
     #   - ./etc/nginx/nginx.conf:/etc/nginx/nginx.conf
     #   - ./etc/nginx/conf.d/graphistry.conf:/etc/nginx/conf.d/graphistry.conf
     #   - ./etc/nginx/conf.d/ssl.self-provided.conf:/etc/nginx/graphistry/ssl.conf
