@@ -27,8 +27,8 @@ PIVOT_USERNAME=graphistry
 # pivot_1    | PIVOT_PASSWORD_HASH: $2b$10$LQRLZ3rBLAHBHLAHAHABLAHBLAHfc3q
 # PIVOT_PASSWORD_HASH=$2b$10$LQRLZ3rBLAHBHLAHAHABLAHBLAHfc3q
 
-ES_HOST=es.example.com
-ES_PORT=9200
+# ES_HOST=es.example.com
+# ES_PORT=9200
 # ES_PROTOCOL=http # HTTP or HTTPS
 # ES_VERSION=6.1
 # ES_AUTH="username:password"
@@ -113,9 +113,12 @@ right up for you.
     links:
       - pivot
       - central
-    # volumes:
+        # volumes:  
     #   - ./etc/nginx/nginx.conf:/etc/nginx/nginx.conf
     #   - ./etc/nginx/conf.d/graphistry.conf:/etc/nginx/conf.d/graphistry.conf
+    #   - ./etc/nginx/conf.d/ssl.self-provided.conf:/etc/nginx/graphistry/ssl.conf
     #   - ./etc/ssl:/etc/ssl
 
 ```
+
+There is an alternate SSL conf you can use if yo uare not using a self signed cert. `./etc/nginx/ssl.conf`.
