@@ -47,7 +47,7 @@ else
 fi
 
 
-outdir="$PWD/../etc/ssl"
+outdir="$PWD/etc/ssl"
 
 printmsg "Creating output directory '$outdir'"
 if ! mkdir -p -m 700 "$outdir"; then
