@@ -134,6 +134,10 @@ right up for you.
 
 There is an alternate SSL conf you can use if yo uare not using a self signed cert. `./etc/nginx/ssl.conf`.
 
+We have a helper tool for generating self signed ssl certs that you can use by running:
+
+`bash scripts/generate-ssl-certs.sh`
+
 Bootstrap System
 ================
 
