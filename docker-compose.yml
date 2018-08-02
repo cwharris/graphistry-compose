@@ -39,7 +39,5 @@ services:
 
   mongo:
     image: spengler.grph.xyz/release/mongo:3.2.20
-    build:
-      context: ./compose/dockerfiles/db/mongo
     env_file:
       - .env
