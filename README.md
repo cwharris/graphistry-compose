@@ -128,6 +128,6 @@ Bootstrap System
 
 Bootstrap either rhel with
 
-`$ ./bootstrap rhel/ubuntu`
+`$ ./bootstrap.sh [rhel|ubuntu]`
 
 Take a look at the individual bootstrap scripts in `./bootstrap`
