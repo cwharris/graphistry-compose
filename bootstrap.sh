@@ -2,7 +2,7 @@
 OS=$1
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-sudo chmod +x ${DIR}/graphistry/bootstrap/$OS/*
+sudo chmod +x ${DIR}/bootstrap/$OS/*
 
 if [[ $OS == 'rhel' ]] || [[ $OS == 'ubuntu' ]] || [[ $OS == 'ubuntu-cuda9.2' ]]; then
 for SCRIPT in ${DIR}/graphistry/bootstrap/$OS/*
