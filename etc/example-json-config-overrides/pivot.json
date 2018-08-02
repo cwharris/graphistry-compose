@@ -30,7 +30,8 @@
 
     "authentication": {
       "passwordHash":   "<see instructions for password hash>",
-      "username": "<pick a fun name you like>"
+      "username": "<pick a fun name you like>
+      "
     },
 
 
