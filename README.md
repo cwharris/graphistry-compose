@@ -67,7 +67,7 @@ ssl_certificate            /etc/ssl/ssl.crt;
 ssl_certificate_key        /etc/ssl/ssl.key;
 ```
 
-Notice the location of the SSL keys and certs. Also the SSL include in the supplied `graphistry.conf`.
+Notice the location and file names of the SSL keys and certs. Also the SSL include in the supplied `graphistry.conf`.
 
 **graphistry.conf**
 ```
