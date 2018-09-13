@@ -8,6 +8,7 @@ services:
       - 80:80
       - 443:443
     links:
+      - viz
       - pivot
       - central
     # volumes:
@@ -27,6 +28,8 @@ services:
 
   viz:
     image: spengler.grph.xyz/release/graphistry-viz:2000
+    depends_on:
+      - mongo
     links:
       - mongo
     env_file:
