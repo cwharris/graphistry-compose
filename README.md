@@ -19,6 +19,22 @@ The contents of the `.env` file should guide you through your complete setup
 ```
 GRAPHISTRY_LOG_LEVEL=DEBUG
 
+# By default, persist no data, and prepopulate datasets with demos.
+# To pass in configs and persist generated data across runs (and drop demos),
+# comment out first sequence of vars and uncomment remaining.
+# Result is persisting data in host's ./data/*, including reading config ./data/config/pivot.json
+GRAPHISTRY_CONFIG=/dev/null
+GRAPHISTRY_INVESTIGATIONS=/dev/null
+GRAPHISTRY_VIZ=/dev/null
+GRAPHISTRY_INVESTIGATIONS_CONTAINER_DIR=/tmp/ignore
+GRAPHISTRY_VIZ_CONTAINER_DIR=/tmp/ignore
+#GRAPHISTRY_CONFIG=./data/config
+#GRAPHISTRY_INVESTIGATIONS=./data/investigations
+#GRAPHISTRY_VIZ=./data/viz
+#PIVOT_CONFIG_FILES=/opt/graphistry/config/pivot.json
+#GRAPHISTRY_INVESTIGATIONS_CONTAINER_DIR=/opt/graphistry/apps/core/pivot/data
+#GRAPHISTRY_VIZ_CONTAINER_DIR=/tmp/graphistry
+
 S3_ENABLED=false
 
 # S3_ACCESS=<YOUR AWS ACCESS KEY ID>
