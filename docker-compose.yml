@@ -34,6 +34,8 @@ services:
       - mongo
     env_file:
       - .env
+    volumes:
+      - ${GRAPHISTRY_VIZ}:${GRAPHISTRY_VIZ_CONTAINER_DIR}
 
   pivot:
     image: spengler.grph.xyz/bundle/graphistry-pivot:2001
@@ -41,6 +43,9 @@ services:
       - .env
     links:
       - central
+    volumes:
+       - ${GRAPHISTRY_CONFIG}:/opt/graphistry/config
+       - ${GRAPHISTRY_INVESTIGATIONS}:${GRAPHISTRY_INVESTIGATIONS_CONTAINER_DIR}
 
   mongo:
     image: spengler.grph.xyz/bundle/mongo:3.2.20
